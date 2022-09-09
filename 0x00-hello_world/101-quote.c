@@ -2,12 +2,12 @@
 #include <unistd.h>
 
 /**
- * main - Entry point
+ * main - Print out the last part of a quote in the standard error.
  *
- * Return: Always 0 (Success)
+ * Return 1 if success.
  */
 int main(void)
 {
-	write(1, "and that piece of art is useful\" -Dora Korpar, 2015-10-09\n", 59);
+	write(2, "and that piece of art is useful - Dora Korpar, 2015-10-09\n", 58);
 	return (1);
 }
