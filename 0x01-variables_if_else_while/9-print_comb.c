@@ -6,18 +6,19 @@
  */
 int main(void)
 {
-	int i = '0';
+	int num;
 
-	while (i <= '9')
+	for (num = 0; num <= 9; num++)
 	{
-		putchar(i);
-		if (i != '9');
-		{
-			putchar(',');
-			putchar(' ');
-		}
-		++i;
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+
+		putchar(',');
+		putchar(' ');
 	}
+
 	putchar('\n');
+
 	return (0);
 }
