@@ -1,11 +1,8 @@
 #include "main.h"
 
 /**
- * print_number - function with one argument
- * @n: int type argument
- *
- * Description: prints an integer
- * Return: value of n
+ * print_number - Prints an integer.
+ * @n: The integer to be printed.
  */
 void print_number(int n)
 {
@@ -16,6 +13,7 @@ void print_number(int n)
 		_putchar('-');
 		num = -num;
 	}
+
 	if ((num / 10) > 0)
 		print_number(num / 10);
 	
